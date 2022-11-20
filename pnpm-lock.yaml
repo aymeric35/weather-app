@@ -3,9 +3,13 @@ lockfileVersion: 5.4
 specifiers:
   eslint: ^8.28.0
   nuxt: 3.0.0
+  primeicons: ^6.0.1
+  primevue: ^3
 
 dependencies:
   eslint: 8.28.0
+  primeicons: 6.0.1
+  primevue: 3.20.0_primeicons@6.0.1
 
 devDependencies:
   nuxt: 3.0.0_eslint@8.28.0
@@ -3889,6 +3893,19 @@ packages:
     resolution: {integrity: sha512-6UqkYefdogmzqAZWzJ7laYeJnaXDy2/J+ZqiiMtS7t7OfpXWTlaeGMwX8U6EFvPV/YWWEKRkS8hKS4k60WHTOg==}
     engines: {node: ^14.13.1 || >=16.0.0}
     dev: true
+
+  /primeicons/6.0.1:
+    resolution: {integrity: sha512-KDeO94CbWI4pKsPnYpA1FPjo79EsY9I+M8ywoPBSf9XMXoe/0crjbUK7jcQEDHuc0ZMRIZsxH3TYLv4TUtHmAA==}
+    dev: false
+
+  /primevue/3.20.0_primeicons@6.0.1:
+    resolution: {integrity: sha512-qLIp1Bwf7lk/ZAvQXqemkoUMh7WQwmVy/Cp8PR+uGGd6szxC0QZWAit/gSjSjD55gZJDtbsiHFVB2a78gN7tdA==}
+    peerDependencies:
+      primeicons: ^5.0.0 || ^6.0.0
+      vue: ^3.0.0
+    dependencies:
+      primeicons: 6.0.1
+    dev: false
 
   /process-nextick-args/2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
