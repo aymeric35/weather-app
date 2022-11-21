@@ -6,5 +6,13 @@ export default defineNuxtConfig({
                 { rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }
             ]
         }
-    }
+    },
+    css: [
+        'primevue/resources/themes/saga-blue/theme.css',
+        'primevue/resources/primevue.css',
+        'primeicons/primeicons.css'
+    ],
+	build: {
+		transpile: ['primevue']
+	}
 })
