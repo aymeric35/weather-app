@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@fontsource/quicksand': ^4.5.11
   eslint: ^8.28.0
   nuxt: 3.0.0
   primeicons: ^6.0.1
@@ -10,6 +11,7 @@ specifiers:
   vue: ^3.0.0
 
 dependencies:
+  '@fontsource/quicksand': 4.5.11
   eslint: 8.28.0
   primeicons: 6.0.1
   primevue: 3.20.0_5f3kdig7wnjzidee4jtphf73cq
@@ -354,6 +356,10 @@ packages:
       strip-json-comments: 3.1.1
     transitivePeerDependencies:
       - supports-color
+
+  /@fontsource/quicksand/4.5.11:
+    resolution: {integrity: sha512-SdgbixomUPBMjv+QZH72XsyJMY/P/XzEEFl7KCop+lAuBfy1fiqX+RyMheHhdNfR6Uk8MJla0iyb1ngcJXD0gw==}
+    dev: false
 
   /@humanwhocodes/config-array/0.11.7:
     resolution: {integrity: sha512-kBbPWzN8oVMLb0hOUYXhmxggL/1cJE6ydvjDIGi9EnAGUyA7cLVKQg+d/Dsm+KZwx2czGHrCmMVLiyg8s5JPKw==}
