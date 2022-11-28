@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "nuxt": "3.0.0",
+    "sass": "^1.56.1",
     "vite-svg-loader": "^3.6.0"
   },
   "dependencies": {
