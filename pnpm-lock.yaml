@@ -5,6 +5,7 @@ specifiers:
   nuxt: 3.0.0
   primeicons: ^6.0.1
   primevue: ^3
+  vite-svg-loader: ^3.6.0
 
 dependencies:
   eslint: 8.28.0
@@ -13,6 +14,7 @@ dependencies:
 
 devDependencies:
   nuxt: 3.0.0_eslint@8.28.0
+  vite-svg-loader: 3.6.0
 
 packages:
 
@@ -4691,6 +4693,13 @@ packages:
       vscode-languageserver: 7.0.0
       vscode-languageserver-textdocument: 1.0.7
       vscode-uri: 3.0.6
+    dev: true
+
+  /vite-svg-loader/3.6.0:
+    resolution: {integrity: sha512-bZJffcgCREW57kNkgMhuNqeDznWXyQwJ3wKrRhHLMMzwDnP5jr3vXW3cqsmquRR7VTP5mLdKj1/zzPPooGUuPw==}
+    dependencies:
+      '@vue/compiler-sfc': 3.2.45
+      svgo: 2.8.0
     dev: true
 
   /vite/3.2.4:
