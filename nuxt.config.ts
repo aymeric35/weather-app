@@ -20,6 +20,15 @@ export default defineNuxtConfig({
         plugins: [
             svgLoader()
         ],
-        devBundler: 'legacy' // to be removed once a fix is deployed, see : https://github.com/nuxt/framework/issues/7794
+        devBundler: 'legacy', // to be removed once a fix is deployed, see : https://github.com/nuxt/framework/issues/7794
+        css: {
+            preprocessorOptions: {
+                scss: {
+                    additionalData: [
+                        '@use "@/assets/styles/conf.scss" as *;',
+                    ]
+                }
+            }
+        }
     }
 })
