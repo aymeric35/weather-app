@@ -9,6 +9,7 @@ export default defineNuxtConfig({
         }
     },
     css: [
+        '@unocss/reset/tailwind.css',
         'primevue/resources/themes/saga-blue/theme.css',
         'primevue/resources/primevue.css',
         'primeicons/primeicons.css',
