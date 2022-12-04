@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@fontsource/quicksand': ^4.5.11
+  '@unocss/reset': ^0.47.5
   eslint: ^8.28.0
   nuxt: 3.0.0
   primeicons: ^6.0.1
@@ -12,6 +13,7 @@ specifiers:
 
 dependencies:
   '@fontsource/quicksand': 4.5.11
+  '@unocss/reset': 0.47.5
   eslint: 8.28.0
   primeicons: 6.0.1
   primevue: 3.20.0_5f3kdig7wnjzidee4jtphf73cq
@@ -834,6 +836,10 @@ packages:
       hookable: 5.4.2
       vue: 3.2.45
     dev: true
+
+  /@unocss/reset/0.47.5:
+    resolution: {integrity: sha512-UmAeVMlcGPyrZJdQMGDX7EMVA4UieUyR9f3l6a3B/AcUNPQtcISLIlzzRqcUg2c/SkkA5sHZdXDa+l48b5+rGA==}
+    dev: false
 
   /@vercel/nft/0.22.1:
     resolution: {integrity: sha512-lYYZIoxRurqDOSoVIdBicGnpUIpfyaS5qVjdPq+EfI285WqtZK3NK/dyCkiyBul+X2U2OEhRyeMdXPCHGJbohw==}
