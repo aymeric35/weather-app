@@ -69,6 +69,13 @@ $smallPhone: 360px;
   line-height: $line-height;
 }
 
+// Primevue theme doesn't take into account the html font-size in percentage (62.5%),
+// the free themes are not using variables so it becomes tricky to follow them with theme updates
+// This solution allows to keep the easy way of calculating rem to px (1rem = 10px) without changing Primevue theme
+@mixin rem($font-size: 1.6rem) {
+  font-size: calc(0.625rem * $font-size)
+}
+
 @mixin resetList {
   ul,
   li {
