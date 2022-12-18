@@ -36,9 +36,4 @@ export default defineNuxtConfig({
       },
     },
   },
-  runtimeConfig: {
-    public: {
-      apiSecret: process.env.NUXT_API_SECRET,
-    },
-  },
 })
