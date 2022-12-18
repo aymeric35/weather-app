@@ -2,7 +2,7 @@ import addSearchParams from '~/utils/addSearchParams'
 
 const api = {
   base: 'https://api.openweathermap.org/data/2.5/weather',
-  key: '51ce8228ff1227b1605fde80287ce123',
+  key: import.meta.env.VITE_WEATHER_SECRET_KEY,
   unit: 'metric',
 }
 
