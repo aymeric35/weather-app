@@ -11,6 +11,7 @@
     "@antfu/eslint-config": "^0.33.1",
     "eslint": "^8.28.0",
     "nuxt": "3.0.0",
+    "nuxt-headlessui": "^1.0.4",
     "postcss": "^8.4.19",
     "postcss-html": "^1.5.0",
     "sass": "^1.56.1",

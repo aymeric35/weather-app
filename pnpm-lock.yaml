@@ -6,6 +6,7 @@ specifiers:
   '@unocss/reset': ^0.47.5
   eslint: ^8.28.0
   nuxt: 3.0.0
+  nuxt-headlessui: ^1.0.4
   postcss: ^8.4.19
   postcss-html: ^1.5.0
   primeflex: ^3.3.0
@@ -34,6 +35,7 @@ devDependencies:
   '@antfu/eslint-config': 0.33.1_wy4udjehnvkneqnogzx5kughki
   eslint: 8.28.0
   nuxt: 3.0.0_qove4eayppmikqzd6om7q2gsuu
+  nuxt-headlessui: 1.0.4_vue@3.2.45
   postcss: 8.4.19
   postcss-html: 1.5.0
   sass: 1.56.1
@@ -496,6 +498,15 @@ packages:
     resolution: {integrity: sha512-SdgbixomUPBMjv+QZH72XsyJMY/P/XzEEFl7KCop+lAuBfy1fiqX+RyMheHhdNfR6Uk8MJla0iyb1ngcJXD0gw==}
     dev: false
 
+  /@headlessui/vue/1.7.7_vue@3.2.45:
+    resolution: {integrity: sha512-dkdNhJkxyT9rXW5fHx/MkKaM3U13P3duYuwoGTRmDGjE7xAsvcWOSJRJpw1AmCQTvjZF44bh2wSlySLaHW+WuQ==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      vue: 3.2.45
+    dev: true
+
   /@humanwhocodes/config-array/0.11.7:
     resolution: {integrity: sha512-kBbPWzN8oVMLb0hOUYXhmxggL/1cJE6ydvjDIGi9EnAGUyA7cLVKQg+d/Dsm+KZwx2czGHrCmMVLiyg8s5JPKw==}
     engines: {node: '>=10.10.0'}
@@ -625,7 +636,7 @@ packages:
       defu: 6.1.1
       globby: 13.1.2
       hash-sum: 2.0.0
-      ignore: 5.2.0
+      ignore: 5.2.1
       jiti: 1.16.0
       knitwork: 1.0.0
       lodash.template: 4.5.0
@@ -652,7 +663,7 @@ packages:
       defu: 6.1.1
       globby: 13.1.2
       hash-sum: 2.0.0
-      ignore: 5.2.0
+      ignore: 5.2.1
       jiti: 1.16.0
       knitwork: 1.0.0
       lodash.template: 4.5.0
@@ -4555,6 +4566,18 @@ packages:
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.2
+    dev: true
+
+  /nuxt-headlessui/1.0.4_vue@3.2.45:
+    resolution: {integrity: sha512-DvmfZqDInDyvBnldf54XIShZVOmKA7SFtIxWQNOORwghDijQxqxkDLw+2BCw/otXf/xE815/7su895edeVsSeA==}
+    dependencies:
+      '@headlessui/vue': 1.7.7_vue@3.2.45
+      '@nuxt/kit': 3.0.0
+      pathe: 1.0.0
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+      - vue
     dev: true
 
   /nuxt/3.0.0_qove4eayppmikqzd6om7q2gsuu:
