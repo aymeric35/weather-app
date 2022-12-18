@@ -27,7 +27,6 @@
   "dependencies": {
     "@fontsource/quicksand": "^4.5.11",
     "@unocss/reset": "^0.47.5",
-    "primeicons": "^6.0.1",
     "primevue": "^3",
     "vue": "^3.0.0"
   }
