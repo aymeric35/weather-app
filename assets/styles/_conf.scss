@@ -1,14 +1,13 @@
 /* fonts 	----------------------------------------------------------------------- */
-$quicksand: "quicksand", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+$quicksand: "Quicksand", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
   "Open Sans", "Helvetica Neue", "sans-serif";
-
-$font-size-sm: clamp(1.28rem, 0.08vw + 1.25rem, 1.35rem);
-$font-size-base: clamp(1.6rem, 0.23vw + 1.51rem, 1.8rem);
-$font-size-md: clamp(2rem, 0.45vw + 1.82rem, 2.4rem);
-$font-size-lg: clamp(2.5rem, 0.79vw + 2.18rem, 3.2rem);
-$font-size-xl: clamp(3.13rem, 1.29vw + 2.61rem, 4.26rem);
-$font-size-xxl: clamp(3.91rem, 2.02vw + 3.1rem, 5.68rem);
-$font-size-xxxl: clamp(4.88rem, 3.06vw + 3.66rem, 7.58rem);
+$font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+$font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+$font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+$font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+$font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+$font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+$font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
 
 /* colors 	----------------------------------------------------------------------- */
 $sky-50: #f0f9ff;
@@ -21,7 +20,6 @@ $sky-600: #0284c7;
 $sky-700: #0369a1;
 $sky-800: #075985;
 $sky-900: #0c4a6e;
-
 $neutral-50: #f8fafc;
 $neutral-100: #f1f5f9;
 $neutral-200: #e2e8f0;
@@ -32,7 +30,6 @@ $neutral-600: #475569;
 $neutral-700: #334155;
 $neutral-800: #1e293b;
 $neutral-900: #0f172a;
-
 $amber-50: #fffbeb;
 $amber-100: #fef3c7;
 $amber-200: #fde68a;
@@ -43,24 +40,22 @@ $amber-600: #d97706;
 $amber-700: #b45309;
 $amber-800: #92400e;
 $amber-900: #78350f;
-
 $bg-light: #fafafa;
 $bg-dark: #171717;
 $text-dark: #171717;
 $text-light: #fafafa;
 
 /* sizes 	----------------------------------------------------------------------- */
-$wrapperSize: 54.4rem;
-$wrapperSizeLarge: 112rem;
-
-$bigDesktop: 1700px;
+$wrapper-size: 54.4rem;
+$wrapper-size-large: 112rem;
+$big-desktop: 1700px;
 $desktop: 1500px;
-$smallDesktop: 1400px;
-$bigTablet: 1024px;
+$small-desktop: 1400px;
+$big-tablet: 1024px;
 $tablet: 900px;
-$bigPhone: 720px;
+$big-phone: 720px;
 $phone: 440px;
-$smallPhone: 360px;
+$small-phone: 360px;
 
 /* mixins --------------------------------------------------------------------- */
 
@@ -76,12 +71,12 @@ $smallPhone: 360px;
   font-size: calc(0.625rem * $font-size)
 }
 
-@mixin resetList {
+@mixin reset-list {
   ul,
   li {
-    overflow: inherit;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    overflow: inherit;
   }
 
   ul {
@@ -89,36 +84,36 @@ $smallPhone: 360px;
   }
 }
 
-@mixin resetButton {
-  appearance: none;
+@mixin reset-button {
   padding: 0;
+  margin: 0;
+  cursor: pointer;
   background: none;
   border: 0;
   outline: none;
-  cursor: pointer;
-  margin: 0;
+  appearance: none;
 }
 
-@mixin resetLink {
+@mixin reset-link {
   color: inherit;
   text-decoration: inherit;
 }
 
 @mixin shadow($type: base) {
   @if $type == sm {
-    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
   } @else if $type == base {
-    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px -1px rgb(0 0 0 / 10%);
   } @else if $type == md {
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -2px rgb(0 0 0 / 10%);
   } @else if $type == lg {
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -4px rgb(0 0 0 / 10%);
   } @else if $type == xl {
-    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 10%), 0 8px 10px -6px rgb(0 0 0 / 10%);
   } @else if $type == 2xl {
-    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
   } @else if $type == inner {
-    box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+    box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 5%);
   } @else {
     @error "Property #{$type} does not exist.";
   }
