@@ -10,17 +10,10 @@ export default defineNuxtConfig({
   },
   css: [
     '@unocss/reset/tailwind.css',
-    'primevue/resources/themes/vela-purple/theme.css',
-    'primevue/resources/primevue.css',
-    'primeicons/primeicons.css',
-    'primeflex/primeflex.css',
     '@fontsource/quicksand/400.css',
     '@fontsource/quicksand/700.css',
     '@/assets/styles/main.scss',
   ],
-  build: {
-    transpile: ['primevue'],
-  },
   vite: {
     plugins: [
       svgLoader(),
