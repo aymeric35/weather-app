@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { getWeatherByCity } from '~/services/weather'
+
 const city = ref('')
 const errorHandling = ref<getWeather404 | undefined>({
   cod: '',
@@ -23,7 +25,7 @@ async function getWeather(city: string) {
   try {
     isLoading.value = true
     await delay(500)
-    weather.value = await $fetch(`/api/weather/${city}`)
+    weather.value = await getWeatherByCity(city)
   }
   catch (err: any) {
     errorHandling.value = err
@@ -37,14 +39,14 @@ async function getWeather(city: string) {
 
 <template>
   <div>
-    <div>
-      <div class="p-inputgroup">
-        <InputText v-model="city" type="text" placeholder="Search a city" :loading="isLoading" @keypress.enter="getWeather(city)" />
-        <Button label="Search" :loading="isLoading" @click="getWeather(city)" />
-      </div>
+    <div class="input-search">
+      <input v-model="city" type="text" placeholder="Search a city" @keypress.enter="getWeather(city)">
+      <button label="Search" @click="getWeather(city)">
+        Search
+      </button>
     </div>
     <div v-if="isLoading">
-      <ProgressSpinner />
+      <p>...loading</p>
     </div>
     <div v-if="weather">
       <h1>{{ weather.name }}</h1>
