@@ -14,6 +14,12 @@ export default defineNuxtConfig({
     '@fontsource/quicksand/700.css',
     '@/assets/styles/main.scss',
   ],
+  modules: [
+    'nuxt-headlessui',
+  ],
+  headlessui: {
+    prefix: 'Headless',
+  },
   vite: {
     plugins: [
       svgLoader(),
