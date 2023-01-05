@@ -47,10 +47,11 @@ const submitCity = (query: string): void => {
     <div class="box">
       <div class="box__input-group">
         <HeadlessComboboxButton class="box__input-button">
-          <Icon name="lucide:search-large" size="36" />
+          <Icon name="lucide:search-large" size="34" />
         </HeadlessComboboxButton>
         <HeadlessComboboxInput
           class="box__input"
+          placeholder="Search a city"
           @change="query = $event.target.value"
           @input="$emit('update:city', $event.target.value)"
           @keypress.enter="submitCity(query)"
@@ -75,8 +76,6 @@ const submitCity = (query: string): void => {
 <style lang="scss" scoped>
 .box {
   position: relative;
-  margin-top: 5rem;
-  margin-left: 5rem;
 
   &__input-group {
     position: relative;
@@ -87,7 +86,9 @@ const submitCity = (query: string): void => {
 
   &__input {
     width: 100%;
-    padding-left: 3rem;
+    height: 3rem;
+    padding-left: 3.5rem;
+    font-size: 1.8rem;
     background: none;
     border: none;
   }
