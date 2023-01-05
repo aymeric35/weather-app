@@ -47,11 +47,13 @@ onMounted(() => {
 
 <style scoped>
 section {
+  display: flex;
+  justify-content: center;
   margin-top: 2rem;
 }
 
 .card {
-  width: 16rem;
+  width: 26rem;
   background: rgb(56 189 248);
   background: linear-gradient(180deg, rgb(56 189 248 / 100%) 0%, rgb(59 130 246 / 100%) 70%);
   border-radius: 1.5rem;
@@ -59,9 +61,9 @@ section {
 
 p {
   margin: 0;
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
   margin-bottom: -15%;
-  font-size: 4rem;
+  font-size: 6rem;
   color: #FAFAFA;
   text-align: center;
 }
