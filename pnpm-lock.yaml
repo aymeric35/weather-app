@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@animxyz/vue3': ^0.6.7
   '@antfu/eslint-config': ^0.33.1
   '@fontsource/quicksand': ^4.5.11
   '@unocss/reset': ^0.47.5
@@ -22,6 +23,7 @@ specifiers:
   vue: ^3.0.0
 
 dependencies:
+  '@animxyz/vue3': 0.6.7_vue@3.2.45
   '@fontsource/quicksand': 4.5.11
   '@unocss/reset': 0.47.5
   vue: 3.2.45
@@ -53,6 +55,20 @@ packages:
       '@jridgewell/gen-mapping': 0.1.1
       '@jridgewell/trace-mapping': 0.3.17
     dev: true
+
+  /@animxyz/core/0.6.6:
+    resolution: {integrity: sha512-NtAA/G0Gq3hzAiL6yuE/4U8IgHMPUl3MxbWUbhO443T9UCsf9rBY94P5aK79Zd+/529FeoNdDphIOcOZLsI2sA==}
+    dev: false
+
+  /@animxyz/vue3/0.6.7_vue@3.2.45:
+    resolution: {integrity: sha512-tLx4HfFcoxR5wgIMFDrmjS2mZifFRNMiwn7skPT3as9ViuCW3QdCsBIDYY2tR37GSvSUC1NhNwkkCZ1pt0C+Hg==}
+    peerDependencies:
+      vue: '>= 3'
+    dependencies:
+      '@animxyz/core': 0.6.6
+      clsx: 1.2.1
+      vue: 3.2.45
+    dev: false
 
   /@antfu/eslint-config-basic/0.33.1_ek47cz6guwtjtwj3eiv3oc6jua:
     resolution: {integrity: sha512-2aubzjJSGcPJkHgNWOzOWaVdya9km0985wQTWJhT7WZEgZRMSjX+KIzMSz0l6HxvTmCCV71uAhBI1+5C+X2YQg==}
@@ -1813,6 +1829,11 @@ packages:
     resolution: {integrity: sha512-JQHZ2QMW6l3aH/j6xCqQThY/9OH4D/9ls34cgkUBiEeocRTU04tHfKPBsUK1PqZCUQM7GiA0IIXJSuXHI64Kbg==}
     engines: {node: '>=0.8'}
     dev: true
+
+  /clsx/1.2.1:
+    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
+    dev: false
 
   /cluster-key-slot/1.1.2:
     resolution: {integrity: sha512-RMr0FhtfXemyinomL4hrWcYJxmX6deFdCxpJzhDttxgO1+bcCnkk+9drydLVDmAMG7NE6aN/fl4F7ucU/90gAA==}
