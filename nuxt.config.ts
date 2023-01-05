@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     '@fontsource/quicksand/400.css',
     '@fontsource/quicksand/700.css',
     '@/assets/styles/main.scss',
+    '@animxyz/core',
   ],
   modules: [
     'nuxt-headlessui',
