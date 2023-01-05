@@ -2,13 +2,6 @@ html {
   font-size: 62.5%;
 }
 
-html,
-body,
-#app {
-  height: 100%;
-  min-height: 100%;
-}
-
 body {
   height: 100%;
   min-height: 100%;
@@ -20,6 +13,8 @@ body {
   letter-spacing: -0.015em;
   background: rgb(67 18 153);
   background: linear-gradient(180deg, rgb(67 18 153 / 100%) 25%, rgb(52 13 121 / 100%) 50%, rgb(38 0 88 / 100%) 75%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: geometricprecision;
