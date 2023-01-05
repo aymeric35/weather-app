@@ -5,5 +5,6 @@
   <div>
     <TheHeader />
     <WeatherDisplayer />
+    <AdditionnalDataDisplayer />
   </div>
 </template>
