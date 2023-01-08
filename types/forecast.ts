@@ -2,11 +2,11 @@ declare interface Forecast {
   cod: string
   message: number
   cnt: number
-  list: List[]
+  list: ForecastData[]
   city: City
 }
 
-export interface City {
+interface City {
   id: number
   name: string
   coord: Coord
@@ -17,12 +17,12 @@ export interface City {
   sunset: number
 }
 
-export interface Coord {
+interface Coord {
   lat: number
   lon: number
 }
 
-export interface List {
+declare interface ForecastData {
   dt: number
   main: MainClass
   weather: Weather[]
@@ -35,11 +35,11 @@ export interface List {
   rain?: Rain
 }
 
-export interface Clouds {
+interface Clouds {
   all: number
 }
 
-export interface MainClass {
+interface MainClass {
   temp: number
   feels_like: number
   temp_min: number
@@ -51,27 +51,27 @@ export interface MainClass {
   temp_kf: number
 }
 
-export interface Rain {
+interface Rain {
   '3h': number
 }
 
-export interface Sys {
+interface Sys {
   pod: Pod
 }
 
-export enum Pod {
+enum Pod {
   D = 'd',
   N = 'n',
 }
 
-export interface Weather {
+interface Weather {
   id: number
   main: MainEnum
   description: Description
   icon: Icon
 }
 
-export enum Description {
+enum Description {
   BrokenClouds = 'broken clouds',
   FewClouds = 'few clouds',
   LightRain = 'light rain',
@@ -80,7 +80,7 @@ export enum Description {
   ScatteredClouds = 'scattered clouds',
 }
 
-export enum Icon {
+enum Icon {
   The02N = '02n',
   The03N = '03n',
   The04D = '04d',
@@ -89,12 +89,12 @@ export enum Icon {
   The10N = '10n',
 }
 
-export enum MainEnum {
+enum MainEnum {
   Clouds = 'Clouds',
   Rain = 'Rain',
 }
 
-export interface Wind {
+interface Wind {
   speed: number
   deg: number
   gust: number
